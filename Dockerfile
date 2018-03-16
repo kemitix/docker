@@ -62,7 +62,7 @@ RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 EXPOSE ${http_port}
 
 # will be used by attached slave agents:
-EXPOSE ${agent_port}
+#EXPOSE ${agent_port}
 
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
